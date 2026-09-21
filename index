@@ -1,0 +1,1872 @@
+# Makes sure visitors always get the newest saved content.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(json)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About | Akhtar Muhammad</title>
+  <meta name="description" content="About Akhtar Muhammad, an IT &amp; Computer Instructor with 2 years of experience in computer education, IT, AI tools, web development and digital school projects.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
+  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
+        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" data-cms-group="Introduction">
+      <div class="container about-hero-grid">
+        <div>
+          <h1 class="rise" style="--i:0" data-cms="about.title" data-cms-label="Page title">About me</h1>
+          <p class="rise" style="--i:1" data-cms="about.intro" data-cms-label="Introduction" data-cms-type="textarea">I'm Akhtar Muhammad, an IT &amp; Computer Instructor with 2 years of experience. I teach practical computer skills, work with AI tools and web development, and build digital projects for schools.</p>
+          <div class="facts rise" style="--i:2">
+            <div class="fact"><strong data-cms="about.fact1.big" data-cms-label="Fact 1: big text">2+</strong><span data-cms="about.fact1.small" data-cms-label="Fact 1: small text">Years of experience</span></div>
+            <div class="fact"><strong data-cms="about.fact2.big" data-cms-label="Fact 2: big text">IT &amp; Computer</strong><span data-cms="about.fact2.small" data-cms-label="Fact 2: small text">Instructor</span></div>
+            <div class="fact"><strong data-cms="about.fact3.big" data-cms-label="Fact 3: big text">School Clerk</strong><span data-cms="about.fact3.small" data-cms-label="Fact 3: small text">Digital records</span></div>
+          </div>
+        </div>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/profile-placeholder.svg" width="800" height="1000" alt="Akhtar Muhammad, IT &amp; Computer Instructor" data-cms-img="about">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="background" data-cms-group="My background">
+      <div class="container two-col">
+        <div class="story">
+          <div class="sec-head reveal">
+            <h2 data-cms="about.bg.title" data-cms-label="Heading">My background</h2>
+          </div>
+          <div data-stagger>
+            <p data-cms="about.bg.p1" data-cms-label="Paragraph 1" data-cms-type="textarea">My background is in computer education and IT. Over the past two years I have taught practical computer skills and worked with AI tools and web development. I have also built digital projects for schools, including student records and school websites.</p>
+            <p data-cms="about.bg.p2" data-cms-label="Paragraph 2" data-cms-type="textarea">Alongside teaching, I have worked as a school clerk, managing digital records and documentation. That hands-on view of school records is what I bring to the school systems I build.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <article class="info-card">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+            <span class="label" data-cms="about.card.label" data-cms-label="Card: small label">Administrative experience</span>
+            <h3 data-cms="about.card.title" data-cms-label="Card: title">School Clerk</h3>
+            <p data-cms="about.card.text" data-cms-label="Card: text">Digital records and documentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching" data-cms-group="What I teach">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="about.teach.title" data-cms-label="Section heading">What I teach</h2>
+          <p data-cms="about.teach.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Practical lessons that take students from computer basics to AI and the web.</p>
+        </div>
+
+        <div class="group-grid" data-stagger>
+          <article class="group-card">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3 data-cms="about.teach.g1.title" data-cms-label="Group 1: title">Computer basics</h3>
+            <ul>
+              <li data-cms="about.teach.g1.i1" data-cms-label="Group 1: item 1">Computer Fundamentals</li>
+              <li data-cms="about.teach.g1.i2" data-cms-label="Group 1: item 2">MS Office</li>
+              <li data-cms="about.teach.g1.i3" data-cms-label="Group 1: item 3">Hardware &amp; Software</li>
+            </ul>
+          </article>
+          <article class="group-card">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <h3 data-cms="about.teach.g2.title" data-cms-label="Group 2: title">AI</h3>
+            <ul>
+              <li data-cms="about.teach.g2.i1" data-cms-label="Group 2: item 1">AI Fundamentals</li>
+              <li data-cms="about.teach.g2.i2" data-cms-label="Group 2: item 2">Prompt Engineering</li>
+              <li data-cms="about.teach.g2.i3" data-cms-label="Group 2: item 3">AI Image Generation</li>
+              <li data-cms="about.teach.g2.i4" data-cms-label="Group 2: item 4">Video Generation</li>
+            </ul>
+          </article>
+          <article class="group-card">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div>
+            <h3 data-cms="about.teach.g3.title" data-cms-label="Group 3: title">Web and design</h3>
+            <ul>
+              <li data-cms="about.teach.g3.i1" data-cms-label="Group 3: item 1">HTML/CSS</li>
+              <li data-cms="about.teach.g3.i2" data-cms-label="Group 3: item 2">Web Development</li>
+              <li data-cms="about.teach.g3.i3" data-cms-label="Group 3: item 3">Canva</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-cms-group="Skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="about.skills.title" data-cms-label="Section heading">Skills</h2>
+          <p data-cms="about.skills.sub" data-cms-label="Text under the heading" data-cms-type="textarea">The areas I teach in and build with every day.</p>
+        </div>
+
+        <div class="skill-grid" data-stagger>
+          <article class="skill">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3 data-cms="about.skill1.title" data-cms-label="Skill 1: title">Computer &amp; IT</h3>
+            <p data-cms="about.skill1.text" data-cms-label="Skill 1: text" data-cms-type="textarea">Computer fundamentals, everyday IT and practical computer training.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
+            <h3 data-cms="about.skill2.title" data-cms-label="Skill 2: title">Web Development</h3>
+            <p data-cms="about.skill2.text" data-cms-label="Skill 2: text" data-cms-type="textarea">HTML, CSS, JavaScript, backend work, Firebase and Supabase.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <h3 data-cms="about.skill3.title" data-cms-label="Skill 3: title">AI &amp; Prompt Engineering</h3>
+            <p data-cms="about.skill3.text" data-cms-label="Skill 3: text" data-cms-type="textarea">AI tools, prompt engineering, and AI image and video generation.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></div>
+            <h3 data-cms="about.skill4.title" data-cms-label="Skill 4: title">Microsoft Office</h3>
+            <p data-cms="about.skill4.text" data-cms-label="Skill 4: text" data-cms-type="textarea">Teaching and using MS Office for everyday work.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></div>
+            <h3 data-cms="about.skill5.title" data-cms-label="Skill 5: title">Hardware &amp; Software</h3>
+            <p data-cms="about.skill5.text" data-cms-label="Skill 5: text" data-cms-type="textarea">How computers work, from the parts inside to the programs on top.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg></div>
+            <h3 data-cms="about.skill6.title" data-cms-label="Skill 6: title">School Digital Systems</h3>
+            <p data-cms="about.skill6.text" data-cms-label="Skill 6: text" data-cms-type="textarea">Student records, school websites and digital documentation.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.2 0 2-.8 2-1.8 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1 .8-1.6 1.8-1.6H17a4 4 0 004-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></div>
+            <h3 data-cms="about.skill7.title" data-cms-label="Skill 7: title">Canva &amp; Digital Design</h3>
+            <p data-cms="about.skill7.text" data-cms-label="Skill 7: text" data-cms-type="textarea">Designs and visuals created with Canva.</p>
+          </article>
+          <article class="skill">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 9"/></svg></div>
+            <h3 data-cms="about.skill8.title" data-cms-label="Skill 8: title">Photoshop CC</h3>
+            <p data-cms="about.skill8.text" data-cms-label="Skill 8: text" data-cms-type="textarea">Image editing and design with Adobe Photoshop CC.</p>
+          </article>
+        </div>
+        <div class="toolkit" data-stagger>
+          <div class="toolkit-box">
+            <h3 data-cms="about.tech.title" data-cms-label="Technical skills heading">Technical skills</h3>
+            <ul class="tile-chips"><li class="pill" data-cms="about.tech1" data-cms-label="Technical skill 1">HTML</li><li class="pill" data-cms="about.tech2" data-cms-label="Technical skill 2">CSS</li><li class="pill" data-cms="about.tech3" data-cms-label="Technical skill 3">JavaScript</li><li class="pill" data-cms="about.tech4" data-cms-label="Technical skill 4">Firebase</li><li class="pill" data-cms="about.tech5" data-cms-label="Technical skill 5">Supabase</li><li class="pill" data-cms="about.tech6" data-cms-label="Technical skill 6">GitHub</li><li class="pill" data-cms="about.tech7" data-cms-label="Technical skill 7">Backend</li><li class="pill" data-cms="about.tech8" data-cms-label="Technical skill 8">Android/App Technologies</li><li class="pill" data-cms="about.tech9" data-cms-label="Technical skill 9">Photoshop CC</li></ul>
+          </div>
+          <div class="toolkit-box">
+            <h3 data-cms="about.ai.title" data-cms-label="AI skills heading">AI skills</h3>
+            <ul class="tile-chips"><li class="pill" data-cms="about.ai1" data-cms-label="AI skill 1">Prompt Engineering</li><li class="pill" data-cms="about.ai2" data-cms-label="AI skill 2">AI tools</li><li class="pill" data-cms="about.ai3" data-cms-label="AI skill 3">AI-assisted website development</li><li class="pill" data-cms="about.ai4" data-cms-label="AI skill 4">AI image/video generation</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="awards" data-cms-group="Awards and achievements" hidden>
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="about.awards.title" data-cms-label="Section heading">Awards &amp; achievements</h2>
+          <p data-cms="about.awards.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Recognition and milestones along the way.</p>
+        </div>
+
+        <div class="awards-grid" data-stagger data-cms-render="awards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="journey" data-cms-group="My journey (timeline)">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <h2 data-cms="about.journey.title" data-cms-label="Section heading">My journey</h2>
+          <p data-cms="about.journey.sub" data-cms-label="Text under the heading" data-cms-type="textarea">How I got from learning computers to teaching and building with them.</p>
+        </div>
+
+        <ol class="timeline" data-stagger>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true">1</span>
+            <div class="tl-body"><h3 data-cms="about.tl1.title" data-cms-label="Step 1: title">Started Learning Computer &amp; IT Skills</h3><p data-cms="about.tl1.text" data-cms-label="Step 1: text" data-cms-type="textarea">Built a foundation in computers, IT and digital tools.</p></div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true">2</span>
+            <div class="tl-body"><h3 data-cms="about.tl2.title" data-cms-label="Step 2: title">Started Working as a Computer Instructor</h3><p data-cms="about.tl2.text" data-cms-label="Step 2: text" data-cms-type="textarea">Began teaching practical computer skills to students.</p></div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true">3</span>
+            <div class="tl-body"><h3 data-cms="about.tl3.title" data-cms-label="Step 3: title">Began Developing Digital School Projects</h3><p data-cms="about.tl3.text" data-cms-label="Step 3: text" data-cms-type="textarea">Started building digital systems and records for schools.</p></div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true">4</span>
+            <div class="tl-body"><h3 data-cms="about.tl4.title" data-cms-label="Step 4: title">Expanded into AI &amp; Web Development</h3><p data-cms="about.tl4.text" data-cms-label="Step 4: text" data-cms-type="textarea">Added AI tools, prompt engineering and web development to my teaching and projects.</p></div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true">5</span>
+            <div class="tl-body"><h3 data-cms="about.tl5.title" data-cms-label="Step 5: title">2+ Years of Teaching &amp; Practical IT Experience</h3><p data-cms="about.tl5.text" data-cms-label="Step 5: text" data-cms-type="textarea">Today I combine classroom teaching with hands-on IT and web work.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-cms-group="Projects strip (the list itself comes from Portfolio Projects)">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="about.projects.title" data-cms-label="Section heading">Projects I have worked on</h2>
+          <p data-cms="about.projects.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Systems, websites and digital projects for schools, businesses and clients.</p>
+        </div>
+
+        <div class="proj-grid" data-stagger data-cms-render="projects-strip"></div>
+        <div class="section-cta reveal">
+          <a class="btn btn-primary" href="portfolio.html" data-cms="about.projects.cta" data-cms-label="Button text">View Full Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-cta" data-cms-group="Closing call to action">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2 data-cms="about.cta.title" data-cms-label="Heading">Let's work together</h2>
+            <p data-cms="about.cta.text" data-cms-label="Text" data-cms-type="textarea">Need computer training, a school system or a new website? Send me a message and we will talk it through.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" data-cms="about.cta.btn1" data-cms-label="First button">Contact Me</a>
+            <a class="btn btn-ghost" href="services.html" data-cms="about.cta.btn2" data-cms-label="Second button">See My Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
+          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
+        </div>
+        <div>
+          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-cms-social-wrap>
+          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
+          <div class="socials" data-cms-render="social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
+        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/site-defaults.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
+<?php
+/**
+ * api.php: the small server-side program behind the Admin Panel.
+ *
+ * It does five jobs:
+ *   1. checks the admin login (username + password, kept safely hashed)
+ *   2. saves the website content to data/site.json
+ *   3. stores uploaded images in the uploads folder
+ *   4. stores messages sent from the Contact page
+ *   5. reports whether the folders are ready (Setup check)
+ *
+ * You never need to edit this file.
+ * Needs: any normal web hosting with PHP 7 or newer.
+ */
+
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+
+define('ROOT', __DIR__);
+define('DATA_FILE', ROOT . '/data/site.json');
+define('PRIV_DIR', ROOT . '/private');
+define('UPLOAD_DIR', ROOT . '/uploads');
+define('DEFAULT_USER', 'admin');
+define('DEFAULT_PASS', 'Admin123');
+define('THEMES', 'charcoal-orange,midnight-blue,slate-purple,emerald-dark');
+define('MAX_UPLOAD', 6 * 1024 * 1024);
+
+/* ------------------------------------------------------------------ output */
+
+function out($arr, $code = 200) {
+    http_response_code($code);
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: no-store, no-cache, must-revalidate');
+    header('X-Content-Type-Options: nosniff');
+    echo json_encode($arr, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    exit;
+}
+
+function fail($msg, $code = 400) {
+    out(array('ok' => false, 'error' => $msg), $code);
+}
+
+set_exception_handler(function ($e) {
+    error_log('api.php: ' . $e->getMessage());
+    fail('Something went wrong on the server. Please try again.', 500);
+});
+
+/* ---------------------------------------------------------------- helpers */
+
+function idx($arr, $key, $default = '') {
+    return (is_array($arr) && isset($arr[$key])) ? $arr[$key] : $default;
+}
+
+function token() {
+    if (function_exists('random_bytes')) {
+        return bin2hex(random_bytes(16));
+    }
+    return md5(uniqid((string)mt_rand(), true)) . md5(uniqid((string)mt_rand(), true));
+}
+
+function body_json() {
+    $raw = file_get_contents('php://input');
+    if ($raw === false) {
+        return array();
+    }
+    if (strlen($raw) > 2 * 1024 * 1024) {
+        fail('That request was too large.', 413);
+    }
+    $j = json_decode($raw, true);
+    return is_array($j) ? $j : array();
+}
+
+function atomic_write($file, $content) {
+    $tmp = $file . '.tmp' . mt_rand(1000, 9999);
+    if (file_put_contents($tmp, $content, LOCK_EX) === false) {
+        return false;
+    }
+    if (!@rename($tmp, $file)) {
+        $ok = @copy($tmp, $file);
+        @unlink($tmp);
+        return $ok;
+    }
+    return true;
+}
+
+function client_ip() {
+    return isset($_SERVER['REMOTE_ADDR']) ? (string)$_SERVER['REMOTE_ADDR'] : 'unknown';
+}
+
+/* --------------------------------------- private files (never web-readable) */
+/* They are saved as .php files that stop immediately when opened in a browser. */
+
+function priv_path($name) {
+    return PRIV_DIR . '/' . $name . '.php';
+}
+
+function priv_read($name) {
+    $f = priv_path($name);
+    if (!is_file($f)) {
+        return null;
+    }
+    $raw = file_get_contents($f);
+    if ($raw === false) {
+        return null;
+    }
+    $pos = strpos($raw, "\n");
+    if ($pos === false) {
+        return null;
+    }
+    $j = json_decode(substr($raw, $pos + 1), true);
+    return is_array($j) ? $j : null;
+}
+
+function priv_write($name, $arr) {
+    if (!is_dir(PRIV_DIR)) {
+        @mkdir(PRIV_DIR, 0755, true);
+    }
+    $guard = '<' . '?php http_response_code(404); exit; ?' . ">\n";
+    $body = $guard . json_encode($arr, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    return atomic_write(priv_path($name), $body);
+}
+
+/* ------------------------------------------------------------------ session */
+
+function start_session() {
+    if (session_status() === PHP_SESSION_ACTIVE) {
+        return;
+    }
+    $https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+        || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+    @ini_set('session.use_strict_mode', '1');
+    @ini_set('session.cookie_samesite', 'Lax');
+    session_name('am_admin');
+    session_set_cookie_params(0, '/', '', $https, true);
+    @session_start();
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        fail('Login sessions are not available on this hosting. Please ask your hosting support to enable PHP sessions.', 500);
+    }
+    if (isset($_SESSION['last']) && (time() - $_SESSION['last']) > 7200) {
+        $_SESSION = array();
+    }
+    $_SESSION['last'] = time();
+}
+
+function require_admin($csrf = true) {
+    if (empty($_SESSION['auth'])) {
+        fail('Please log in again.', 401);
+    }
+    if ($csrf) {
+        $sent = isset($_SERVER['HTTP_X_CSRF_TOKEN']) ? (string)$_SERVER['HTTP_X_CSRF_TOKEN'] : '';
+        if (!isset($_SESSION['csrf']) || !hash_equals((string)$_SESSION['csrf'], $sent)) {
+            fail('Your session has expired. Please reload the page and log in again.', 403);
+        }
+    }
+}
+
+function auth_load() {
+    $a = priv_read('auth');
+    if (!$a || empty($a['hash'])) {
+        $a = array(
+            'user' => DEFAULT_USER,
+            'hash' => password_hash(DEFAULT_PASS, PASSWORD_DEFAULT),
+            'must_change' => true
+        );
+        if (!priv_write('auth', $a)) {
+            fail('The "private" folder is not writable. Please see the hosting guide (Setup check).', 500);
+        }
+    }
+    return $a;
+}
+
+/* ------------------------------------------------ rate limiting (per visitor) */
+
+function rl_hits($all, $bucket, $window) {
+    $ip = client_ip();
+    $now = time();
+    $hits = (isset($all[$bucket]) && isset($all[$bucket][$ip])) ? $all[$bucket][$ip] : array();
+    $keep = array();
+    foreach ($hits as $t) {
+        if ($t > $now - $window) {
+            $keep[] = $t;
+        }
+    }
+    return $keep;
+}
+
+function rl_count($bucket, $window) {
+    $all = priv_read('ratelimit');
+    if (!is_array($all)) {
+        $all = array();
+    }
+    return count(rl_hits($all, $bucket, $window));
+}
+
+function rl_add($bucket, $window) {
+    $all = priv_read('ratelimit');
+    if (!is_array($all)) {
+        $all = array();
+    }
+    $hits = rl_hits($all, $bucket, $window);
+    $hits[] = time();
+    $all[$bucket][client_ip()] = $hits;
+    $now = time();
+    foreach ($all as $b => $ips) {
+        foreach ($ips as $ip => $list) {
+            $fresh = false;
+            foreach ($list as $t) {
+                if ($t > $now - 7200) {
+                    $fresh = true;
+                }
+            }
+            if (!$fresh) {
+                unset($all[$b][$ip]);
+            }
+        }
+    }
+    priv_write('ratelimit', $all);
+}
+
+function rl_clear($bucket) {
+    $all = priv_read('ratelimit');
+    if (is_array($all) && isset($all[$bucket][client_ip()])) {
+        unset($all[$bucket][client_ip()]);
+        priv_write('ratelimit', $all);
+    }
+}
+
+/* --------------------------------------------------------------- cleaning */
+
+function s($v, $max) {
+    if (!is_string($v) && !is_numeric($v)) {
+        return '';
+    }
+    $v = trim((string)$v);
+    if (function_exists('mb_substr')) {
+        $v = mb_substr($v, 0, $max, 'UTF-8');
+    } else {
+        $v = substr($v, 0, $max);
+    }
+    return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F]/', '', $v);
+}
+
+function clean_id($v, $fallback) {
+    $v = strtolower(preg_replace('/[^a-z0-9]+/i', '-', (string)$v));
+    $v = trim($v, '-');
+    return $v !== '' ? substr($v, 0, 60) : $fallback;
+}
+
+function uniq_id($id, &$seen) {
+    $base = $id;
+    $n = 2;
+    while (isset($seen[$id])) {
+        $id = $base . '-' . $n;
+        $n++;
+    }
+    $seen[$id] = true;
+    return $id;
+}
+
+function clean_path($v) {
+    $v = trim((string)$v);
+    if ($v === '') {
+        return '';
+    }
+    if (preg_match('#^(uploads|assets)/[A-Za-z0-9_\-./]+$#', $v) && strpos($v, '..') === false) {
+        return $v;
+    }
+    return '';
+}
+
+function clean_url($v) {
+    $v = trim((string)$v);
+    if ($v === '') {
+        return '';
+    }
+    if (!preg_match('#^https?://#i', $v)) {
+        $v = 'https://' . $v;
+    }
+    if (strlen($v) > 300 || !filter_var($v, FILTER_VALIDATE_URL)) {
+        return '';
+    }
+    return $v;
+}
+
+function clean_email($v) {
+    $v = trim((string)$v);
+    if ($v === '' || strlen($v) > 150) {
+        return '';
+    }
+    return filter_var($v, FILTER_VALIDATE_EMAIL) ? $v : '';
+}
+
+function clean_phone($v) {
+    $v = preg_replace('/[^0-9+ ()\-]/', '', (string)$v);
+    if (strlen(preg_replace('/\D/', '', $v)) < 6) {
+        return '';
+    }
+    return substr($v, 0, 25);
+}
+
+function list_of($in, $key, $max) {
+    $list = idx($in, $key, array());
+    if (!is_array($list)) {
+        return array();
+    }
+    $out = array();
+    foreach ($list as $item) {
+        if (is_array($item)) {
+            $out[] = $item;
+        }
+        if (count($out) >= $max) {
+            break;
+        }
+    }
+    return $out;
+}
+
+/* Builds a clean, safe copy of the website data. Anything unexpected is dropped. */
+function sanitize_site($in) {
+    $themes = explode(',', THEMES);
+    $icons = array('web', 'school', 'apps', 'training', 'ai', 'excel', 'support', 'design', 'database', 'mobile', 'shield', 'chart');
+    $out = array('version' => 1);
+
+    $theme = idx($in, 'theme', '');
+    $out['theme'] = in_array($theme, $themes, true) ? $theme : $themes[0];
+
+    $text = array();
+    $tin = idx($in, 'text', array());
+    if (is_array($tin)) {
+        $n = 0;
+        foreach ($tin as $k => $v) {
+            if ($n++ > 800) {
+                break;
+            }
+            if (!preg_match('/^[a-z0-9._\-]{1,80}$/', (string)$k)) {
+                continue;
+            }
+            $text[(string)$k] = s($v, 2000);
+        }
+    }
+    $out['text'] = $text ? $text : new stdClass();
+
+    $img = idx($in, 'images', array());
+    $out['images'] = array(
+        'logo' => clean_path(idx($img, 'logo')),
+        'profile' => clean_path(idx($img, 'profile')),
+        'about' => clean_path(idx($img, 'about'))
+    );
+
+    $con = idx($in, 'contact', array());
+    $out['contact'] = array(
+        'email' => clean_email(idx($con, 'email')),
+        'whatsapp' => clean_phone(idx($con, 'whatsapp'))
+    );
+
+    $soc = idx($in, 'social', array());
+    $out['social'] = array();
+    foreach (array('github', 'linkedin', 'facebook', 'youtube', 'instagram') as $k) {
+        $out['social'][$k] = clean_url(idx($soc, $k));
+    }
+
+    $seen = array();
+    $out['services'] = array();
+    foreach (list_of($in, 'services', 60) as $i => $x) {
+        $title = s(idx($x, 'title'), 120);
+        if ($title === '') {
+            continue;
+        }
+        $icon = idx($x, 'icon');
+        $out['services'][] = array(
+            'id' => uniq_id(clean_id(idx($x, 'id'), 'svc-' . ($i + 1)), $seen),
+            'title' => $title,
+            'description' => s(idx($x, 'description'), 400),
+            'icon' => in_array($icon, $icons, true) ? $icon : 'web',
+            'price' => s(idx($x, 'price'), 60)
+        );
+    }
+
+    $seen = array();
+    $out['categories'] = array();
+    $catIds = array();
+    foreach (list_of($in, 'categories', 30) as $i => $x) {
+        $name = s(idx($x, 'name'), 60);
+        if ($name === '') {
+            continue;
+        }
+        $id = uniq_id(clean_id(idx($x, 'id', $name), 'cat-' . ($i + 1)), $seen);
+        $catIds[$id] = true;
+        $out['categories'][] = array('id' => $id, 'name' => $name);
+    }
+
+    $seen = array();
+    $out['projects'] = array();
+    foreach (list_of($in, 'projects', 100) as $i => $x) {
+        $title = s(idx($x, 'title'), 150);
+        if ($title === '') {
+            continue;
+        }
+        $cat = (string)idx($x, 'category');
+        $art = (int)idx($x, 'art', 0);
+        $out['projects'][] = array(
+            'id' => uniq_id(clean_id(idx($x, 'id', $title), 'project-' . ($i + 1)), $seen),
+            'title' => $title,
+            'description' => s(idx($x, 'description'), 300),
+            'details' => s(idx($x, 'details'), 3000),
+            'category' => isset($catIds[$cat]) ? $cat : '',
+            'image' => clean_path(idx($x, 'image')),
+            'featured' => !empty($x['featured']),
+            'art' => ($art >= 1 && $art <= 6) ? $art : 0
+        );
+    }
+
+    $seen = array();
+    $out['awards'] = array();
+    foreach (list_of($in, 'awards', 60) as $i => $x) {
+        $title = s(idx($x, 'title'), 150);
+        if ($title === '') {
+            continue;
+        }
+        $out['awards'][] = array(
+            'id' => uniq_id(clean_id(idx($x, 'id'), 'award-' . ($i + 1)), $seen),
+            'title' => $title,
+            'issuer' => s(idx($x, 'issuer'), 150),
+            'year' => s(idx($x, 'year'), 20),
+            'description' => s(idx($x, 'description'), 600),
+            'image' => clean_path(idx($x, 'image'))
+        );
+    }
+
+    $seen = array();
+    $out['testimonials'] = array();
+    foreach (list_of($in, 'testimonials', 40) as $i => $x) {
+        $t = s(idx($x, 'text'), 800);
+        $name = s(idx($x, 'name'), 100);
+        if ($t === '' || $name === '') {
+            continue;
+        }
+        $out['testimonials'][] = array(
+            'id' => uniq_id(clean_id(idx($x, 'id'), 'testimonial-' . ($i + 1)), $seen),
+            'text' => $t,
+            'name' => $name,
+            'role' => s(idx($x, 'role'), 120)
+        );
+    }
+
+    $out['tools'] = array();
+    $tools = idx($in, 'tools', array());
+    if (is_array($tools)) {
+        foreach ($tools as $t) {
+            $t = s($t, 40);
+            if ($t !== '') {
+                $out['tools'][] = $t;
+            }
+            if (count($out['tools']) >= 60) {
+                break;
+            }
+        }
+    }
+
+    $out['updated'] = time();
+    return $out;
+}
+
+function site_json($site) {
+    return json_encode($site, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+}
+
+function site_load() {
+    if (!is_file(DATA_FILE)) {
+        return array();
+    }
+    $j = json_decode((string)file_get_contents(DATA_FILE), true);
+    return is_array($j) ? $j : array();
+}
+
+function site_save($site) {
+    if (!is_dir(dirname(DATA_FILE))) {
+        @mkdir(dirname(DATA_FILE), 0755, true);
+    }
+    $json = site_json($site);
+    if (!atomic_write(DATA_FILE, $json)) {
+        fail('Could not save. The "data" folder is not writable. Please see the hosting guide (Setup check).', 500);
+    }
+    cleanup_uploads($json);
+}
+
+/* Removes uploaded images that are no longer used anywhere (older than 1 hour). */
+function cleanup_uploads($json) {
+    if (!is_dir(UPLOAD_DIR)) {
+        return;
+    }
+    preg_match_all('#uploads/([A-Za-z0-9_\-.]+)#', $json, $m);
+    $used = array_flip($m[1]);
+    $files = @scandir(UPLOAD_DIR);
+    if (!$files) {
+        return;
+    }
+    foreach ($files as $f) {
+        if ($f === '.' || $f === '..' || $f === '.htaccess' || $f === 'index.html') {
+            continue;
+        }
+        $p = UPLOAD_DIR . '/' . $f;
+        if (is_file($p) && !isset($used[$f]) && filemtime($p) < time() - 3600) {
+            @unlink($p);
+        }
+    }
+}
+
+/* ---------------------------------------------------------------- actions */
+
+function act_session() {
+    if (!empty($_SESSION['auth'])) {
+        $a = auth_load();
+        out(array('ok' => true, 'loggedIn' => true, 'csrf' => $_SESSION['csrf'], 'user' => $a['user'], 'mustChange' => !empty($a['must_change'])));
+    }
+    out(array('ok' => true, 'loggedIn' => false));
+}
+
+function act_login() {
+    $in = body_json();
+    $user = (string)idx($in, 'username');
+    $pass = (string)idx($in, 'password');
+    if (rl_count('login', 900) >= 5) {
+        fail('Too many failed attempts. Please wait 15 minutes and try again.', 429);
+    }
+    $auth = auth_load();
+    $ok = hash_equals((string)$auth['user'], $user) && password_verify($pass, (string)$auth['hash']);
+    if (!$ok) {
+        rl_add('login', 900);
+        usleep(600000);
+        fail('Incorrect username or password.', 401);
+    }
+    rl_clear('login');
+    session_regenerate_id(true);
+    $_SESSION['auth'] = true;
+    $_SESSION['user'] = $auth['user'];
+    $_SESSION['csrf'] = token();
+    out(array('ok' => true, 'csrf' => $_SESSION['csrf'], 'user' => $auth['user'], 'mustChange' => !empty($auth['must_change'])));
+}
+
+function act_logout() {
+    $_SESSION = array();
+    if (session_status() === PHP_SESSION_ACTIVE) {
+        session_destroy();
+    }
+    out(array('ok' => true));
+}
+
+function act_save() {
+    require_admin(true);
+    $in = body_json();
+    $site = sanitize_site(idx($in, 'data', array()));
+    site_save($site);
+    out(array('ok' => true, 'data' => $site));
+}
+
+function act_set_theme() {
+    require_admin(true);
+    $in = body_json();
+    $theme = (string)idx($in, 'theme');
+    if (!in_array($theme, explode(',', THEMES), true)) {
+        fail('Unknown theme.');
+    }
+    $site = site_load();
+    $site['theme'] = $theme;
+    $clean = sanitize_site($site);
+    site_save($clean);
+    out(array('ok' => true, 'theme' => $theme));
+}
+
+function act_upload() {
+    require_admin(true);
+    if (!isset($_FILES['file']) || !is_array($_FILES['file'])) {
+        fail('No image was received. It may be larger than your hosting allows.');
+    }
+    $f = $_FILES['file'];
+    if ($f['error'] === UPLOAD_ERR_INI_SIZE || $f['error'] === UPLOAD_ERR_FORM_SIZE) {
+        fail('This image is too large for your hosting. Please choose a smaller image.');
+    }
+    if ($f['error'] !== UPLOAD_ERR_OK) {
+        fail('The image could not be uploaded. Please try again.');
+    }
+    if ($f['size'] > MAX_UPLOAD) {
+        fail('This image is larger than 6 MB. Please choose a smaller image.');
+    }
+    $info = @getimagesize($f['tmp_name']);
+    if (!$info) {
+        fail('That file is not a valid image.');
+    }
+    $map = array(IMAGETYPE_JPEG => 'jpg', IMAGETYPE_PNG => 'png', IMAGETYPE_GIF => 'gif');
+    if (defined('IMAGETYPE_WEBP')) {
+        $map[IMAGETYPE_WEBP] = 'webp';
+    }
+    if (!isset($map[$info[2]])) {
+        fail('Please upload a JPG, PNG, WebP or GIF image.');
+    }
+    if (!is_dir(UPLOAD_DIR)) {
+        @mkdir(UPLOAD_DIR, 0755, true);
+    }
+    $name = 'img-' . date('Ymd-His') . '-' . substr(token(), 0, 8) . '.' . $map[$info[2]];
+    $dest = UPLOAD_DIR . '/' . $name;
+    if (!@move_uploaded_file($f['tmp_name'], $dest)) {
+        fail('The image could not be saved. The "uploads" folder may not be writable.', 500);
+    }
+    @chmod($dest, 0644);
+    out(array('ok' => true, 'path' => 'uploads/' . $name));
+}
+
+function act_change_password() {
+    require_admin(true);
+    $in = body_json();
+    $auth = auth_load();
+    $cur = (string)idx($in, 'current');
+    $newUser = trim((string)idx($in, 'username'));
+    $new = (string)idx($in, 'password');
+    if (!password_verify($cur, (string)$auth['hash'])) {
+        fail('Your current password is not correct.', 403);
+    }
+    if (!preg_match('/^[A-Za-z0-9_.@\-]{3,40}$/', $newUser)) {
+        fail('The username must be 3 to 40 letters or numbers (no spaces).');
+    }
+    if (strlen($new) < 8) {
+        fail('The new password must be at least 8 characters long.');
+    }
+    if ($new === DEFAULT_PASS || strtolower($new) === strtolower($newUser)) {
+        fail('Please choose a different password. It must not be the default one.');
+    }
+    $auth = array('user' => $newUser, 'hash' => password_hash($new, PASSWORD_DEFAULT), 'must_change' => false);
+    if (!priv_write('auth', $auth)) {
+        fail('The password could not be saved. The "private" folder is not writable.', 500);
+    }
+    session_regenerate_id(true);
+    $_SESSION['auth'] = true;
+    $_SESSION['user'] = $newUser;
+    $_SESSION['csrf'] = token();
+    out(array('ok' => true, 'csrf' => $_SESSION['csrf'], 'user' => $newUser));
+}
+
+function act_messages() {
+    require_admin(false);
+    $m = priv_read('messages');
+    if (!is_array($m)) {
+        $m = array();
+    }
+    out(array('ok' => true, 'messages' => array_values($m)));
+}
+
+function act_message_update() {
+    require_admin(true);
+    $in = body_json();
+    $id = (string)idx($in, 'id');
+    $do = (string)idx($in, 'do');
+    $m = priv_read('messages');
+    if (!is_array($m)) {
+        $m = array();
+    }
+    $next = array();
+    foreach ($m as $row) {
+        if (idx($row, 'id') === $id) {
+            if ($do === 'delete') {
+                continue;
+            }
+            if ($do === 'read') {
+                $row['read'] = true;
+            }
+            if ($do === 'unread') {
+                $row['read'] = false;
+            }
+        }
+        $next[] = $row;
+    }
+    priv_write('messages', array_values($next));
+    out(array('ok' => true));
+}
+
+function act_contact() {
+    $in = body_json();
+    if (trim((string)idx($in, 'website')) !== '') {
+        out(array('ok' => true)); // hidden trap field: a robot filled it in
+    }
+    $name = s(idx($in, 'name'), 100);
+    $email = clean_email(idx($in, 'email'));
+    $msg = s(idx($in, 'message'), 3000);
+    $svc = s(idx($in, 'service'), 120);
+    if ($name === '' || $email === '' || strlen($msg) < 5) {
+        fail('Please fill in your name, a valid email address and a message.');
+    }
+    if (rl_count('contact', 3600) >= 5) {
+        fail('You have sent several messages already. Please try again later.', 429);
+    }
+    rl_add('contact', 3600);
+
+    $m = priv_read('messages');
+    if (!is_array($m)) {
+        $m = array();
+    }
+    array_unshift($m, array(
+        'id' => substr(token(), 0, 12),
+        'name' => $name,
+        'email' => $email,
+        'message' => $msg,
+        'service' => $svc,
+        'time' => time(),
+        'read' => false
+    ));
+    $m = array_slice($m, 0, 300);
+    if (!priv_write('messages', $m)) {
+        fail('Your message could not be saved. Please try again later.', 500);
+    }
+
+    // Best effort: also send it to the admin email if one is set (many hosts allow this).
+    $site = site_load();
+    $to = clean_email(idx(idx($site, 'contact', array()), 'email'));
+    if ($to !== '' && function_exists('mail')) {
+        $host = isset($_SERVER['HTTP_HOST']) ? preg_replace('/[^A-Za-z0-9.\-]/', '', (string)$_SERVER['HTTP_HOST']) : 'localhost';
+        $body = "New message from your website\n\nName: " . $name . "\nEmail: " . $email . ($svc !== '' ? "\nService: " . $svc : '') . "\n\n" . $msg . "\n";
+        $headers = 'From: website@' . $host . "\r\n" . 'Reply-To: ' . $email . "\r\n" . 'Content-Type: text/plain; charset=UTF-8';
+        @mail($to, 'New message from your website', $body, $headers);
+    }
+    out(array('ok' => true));
+}
+
+function act_health() {
+    require_admin(false);
+    $dataDir = dirname(DATA_FILE);
+    $dataOk = is_dir($dataDir) ? (is_writable($dataDir) && (!is_file(DATA_FILE) || is_writable(DATA_FILE))) : is_writable(ROOT);
+    $upOk = is_dir(UPLOAD_DIR) ? is_writable(UPLOAD_DIR) : is_writable(ROOT);
+    $privOk = is_dir(PRIV_DIR) ? is_writable(PRIV_DIR) : is_writable(ROOT);
+    out(array(
+        'ok' => true,
+        'php' => PHP_VERSION,
+        'dataWritable' => $dataOk,
+        'uploadsWritable' => $upOk,
+        'privateWritable' => $privOk,
+        'maxUpload' => (string)ini_get('upload_max_filesize'),
+        'postMax' => (string)ini_get('post_max_size')
+    ));
+}
+
+/* ----------------------------------------------------------------- router */
+
+$action = isset($_GET['action']) ? (string)$_GET['action'] : '';
+$method = isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : 'GET';
+if ($action !== 'contact') {
+    start_session();
+}
+$postOnly = array('login', 'logout', 'save', 'set_theme', 'upload', 'change_password', 'message_update', 'contact');
+
+if (in_array($action, $postOnly, true) && $method !== 'POST') {
+    fail('Please use POST.', 405);
+}
+
+switch ($action) {
+    case 'session':         act_session(); break;
+    case 'login':           act_login(); break;
+    case 'logout':          act_logout(); break;
+    case 'save':            act_save(); break;
+    case 'set_theme':       act_set_theme(); break;
+    case 'upload':          act_upload(); break;
+    case 'change_password': act_change_password(); break;
+    case 'messages':        act_messages(); break;
+    case 'message_update':  act_message_update(); break;
+    case 'contact':         act_contact(); break;
+    case 'health':          act_health(); break;
+    default:                fail('Unknown request.', 404);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact | Akhtar Muhammad</title>
+  <meta name="description" content="Contact Akhtar Muhammad for computer training, school systems, websites and web apps.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
+  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
+        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-cta" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" data-cms-group="Page heading">
+      <div class="container">
+        <h1 class="rise" style="--i:0" data-cms="contact.title" data-cms-label="Page title">Contact</h1>
+        <p class="rise" style="--i:1" data-cms="contact.intro" data-cms-label="Introduction" data-cms-type="textarea">Have a question or a project in mind? Send me a message and I will get back to you.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <div class="container contact-grid">
+        <div class="contact-side" data-cms-group="Contact details (email, WhatsApp and links are managed under Contact and Social Links)">
+          <h2 class="reveal" data-cms="contact.info.title" data-cms-label="Left column heading">Get in touch</h2>
+          <div class="contact-list" data-stagger data-cms-render="contact-cards"></div>
+          <div class="socials" data-cms-render="social" data-cms-social="networks"></div>
+          <span hidden data-cms="contact.empty" data-cms-label="Message shown when no email or WhatsApp is set" data-cms-type="textarea">Contact details will appear here soon. In the meantime, please use the form.</span>
+        </div>
+        <div class="form-panel reveal" data-cms-group="Message form">
+          <h2 data-cms="contact.form.title" data-cms-label="Form heading">Send a message</h2>
+          <form data-cms-form="contact" novalidate>
+            <div class="field"><label for="f-name" data-cms="contact.form.name" data-cms-label="Label: name field">Your name</label><input id="f-name" name="name" type="text" maxlength="100" required autocomplete="name"></div>
+            <div class="field"><label for="f-email" data-cms="contact.form.email" data-cms-label="Label: email field">Your email</label><input id="f-email" name="email" type="email" maxlength="150" required autocomplete="email"></div>
+            <div class="field"><label for="f-msg" data-cms="contact.form.message" data-cms-label="Label: message field">Your message</label><textarea id="f-msg" name="message" maxlength="3000" required></textarea></div>
+            <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+            <button class="btn btn-primary" type="submit" data-cms="contact.form.button" data-cms-label="Send button text">Send message</button>
+            <div class="form-status" role="status" hidden></div>
+          </form>
+          <span hidden data-cms="contact.form.success" data-cms-label="Message shown after sending" data-cms-type="textarea">Thank you! Your message has been sent.</span>
+          <span hidden data-cms="contact.form.error" data-cms-label="Message shown if sending fails" data-cms-type="textarea">Sorry, your message could not be sent. Please try again or contact me directly.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
+          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
+        </div>
+        <div>
+          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-cms-social-wrap>
+          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
+          <div class="socials" data-cms-render="social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
+        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/site-defaults.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
+=====================================================================
+  HOW TO PUT YOUR WEBSITE ONLINE  (simple guide, no coding needed)
+=====================================================================
+
+YOUR TEST LOGIN FOR THE ADMIN PANEL
+-----------------------------------
+  Username:  admin
+  Password:  Admin123
+
+  This is only a starting login so you can test right away.
+  IMPORTANT: change it the very first time you log in (see Part 3),
+  and always before your website goes live.
+
+
+PART 1. WHAT YOU NEED
+---------------------
+1. A domain name (for example yourname.com).
+2. A web hosting plan that supports PHP.
+   Almost every normal hosting plan does (the kind that comes with
+   "cPanel" or a "File Manager"). If unsure, ask the hosting company:
+   "Does this plan support PHP 7 or newer?"
+
+   NOTE: free "static" hosts such as GitHub Pages, Netlify or Firebase
+   Hosting can show the pages, but the Admin Panel cannot save changes
+   there. Use normal PHP hosting.
+
+
+PART 2. UPLOADING THE FILES  (about 10 minutes)
+-----------------------------------------------
+Option A: with the hosting File Manager (easiest)
+
+  1. Log in to your hosting control panel (cPanel) and open "File Manager".
+  2. Open the folder called  public_html  (this is where your website lives).
+     If your domain has its own folder, open that one instead.
+  3. Click "Upload" and choose the ZIP file you downloaded.
+  4. When it has finished, go back, right-click the ZIP file and
+     choose "Extract".
+  5. Extraction usually creates a folder called
+     "akhtar-muhammad-portfolio". Open it, select ALL the files
+     inside (index.html, api.php, admin, assets, data, ...),
+     click "Move", and move them up into  public_html.
+     The result must be that  index.html  sits directly inside
+     public_html (not inside another folder).
+  6. Delete the empty folder and the ZIP file.
+
+Option B: with FileZilla (free FTP program)
+
+  1. Unzip the ZIP file on your computer.
+  2. Connect FileZilla using the FTP details your host emailed you.
+  3. Drag everything from inside the unzipped folder into
+     public_html on the right-hand side.
+
+Now open  https://yourdomain.com  in your browser. Your website
+should appear.
+
+
+PART 3. LOG IN AND CHANGE THE DEFAULT PASSWORD  (do this first!)
+----------------------------------------------------------------
+  1. Go to  https://yourdomain.com/admin
+  2. Log in with:   admin   /   Admin123
+  3. A box appears: "Change your default login". Fill it in:
+       - Current password:  Admin123
+       - New username:      choose your own (letters and numbers)
+       - New password:      at least 8 characters, not Admin123
+       - Repeat the new password
+     Click "Save new login".
+     (If you clicked "Remind me later", open  Password and Security
+      in the left menu at any time. A red warning stays at the top
+      until you have changed it.)
+  4. Write your new username and password down somewhere safe.
+
+
+PART 4. CHECK EVERYTHING WORKS
+------------------------------
+On the Dashboard, look at the "Setup check" box. You want to see
+all green ticks:
+  - PHP is running
+  - Saving is possible
+  - Image uploads are possible
+  - Login and messages can be stored
+
+If one shows a red cross, the folder named in the message needs
+"write permission". In File Manager: right-click that folder
+(data, uploads or private) > "Change Permissions" and set it to
+755 (or 775 if 755 does not fix it). If it still fails, send the
+message to your hosting support: "Please make the folders data,
+uploads and private writable for PHP."
+
+Then do a quick test: change your name on the Home page, click
+"Save changes", and open your website in a new tab. The change is
+there straight away.
+
+
+PART 5. USING THE ADMIN PANEL
+-----------------------------
+Left menu:
+  PAGES     Change the wording on Home, About, Services, Portfolio,
+            Contact, and the header/footer.
+  FEATURES  Services and Prices, Portfolio Projects (with
+            categories and thumbnails), Awards and Achievements,
+            Testimonials, Tools, Contact and Social Links, Images
+            (profile photo, logo, every thumbnail), Color Theme.
+  INBOX     Messages sent from your Contact page.
+  ACCOUNT   Change your username and password.
+
+Every time you change something, a bar appears at the bottom:
+"You have changes that are not saved yet". Click "Save changes"
+and your live website updates immediately.
+(Color Theme is different: clicking a theme changes your whole
+website at once, no saving needed.)
+
+Tips
+  - Photos: any normal photo works. The panel makes big photos
+    smaller automatically.
+  - Testimonials and Awards: these sections stay hidden on your
+    website until you add your first real entry.
+  - Services: leave the price empty to show "Contact for a quote".
+
+
+PART 6. IF YOU FORGET YOUR PASSWORD
+-----------------------------------
+  1. In File Manager open the folder  private
+  2. Delete the file  auth.php
+  3. Go to /admin and log in with  admin / Admin123  again.
+  4. Change the password straight away (Part 3).
+(Only someone who can log in to your hosting can do this.)
+
+
+PART 7. KEEP A BACKUP
+---------------------
+Everything you enter is saved in two places:
+  - the folder  data     (your texts, lists, prices, settings)
+  - the folder  uploads  (your pictures)
+  - the folder  private  (your login and messages)
+Once in a while, download these three folders to your computer.
+If anything ever goes wrong, upload them back.
+
+
+HELPFUL TO KNOW
+---------------
+  - Use HTTPS (the padlock). Most hosts give you a free one
+    ("Let's Encrypt" / "SSL") in the control panel.
+  - Never share the Admin Panel address and login with anyone
+    you do not trust.
+  - Do not delete api.php: the Admin Panel and the Contact form
+    need it.
+
+IF THE LOGIN DOES NOT OPEN
+--------------------------
+1. The Admin Panel does NOT work if you double-click admin/index.html
+   on your computer. It only works after the files are uploaded to
+   hosting with PHP, and you open  https://yourdomain.com/admin
+2. Type the login exactly (no quote marks, no spaces):
+       admin
+       Admin123        (capital A, small "dmin", then 123)
+3. Quick test: open this address in your browser
+       https://yourdomain.com/api.php?action=session
+   You should see:   {"ok":true,"loggedIn":false}
+     - If the file downloads or you see code starting with <?php,
+       PHP is not switched on for your hosting: ask your host to enable it.
+     - If you see "Not found" (404), api.php is in the wrong folder.
+       It must sit next to index.html inside public_html.
+4. After 5 wrong tries the login locks for 15 minutes. Wait, then try again.
+5. If a red message appears about the "private" folder, set that
+   folder's permission to 755 (or 775) as explained in Part 4.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Akhtar Muhammad | IT &amp; Computer Instructor and Web Developer</title>
+  <meta name="description" content="Akhtar Muhammad is an IT &amp; Computer Instructor with 2 years of experience in computer education, AI tools, web development and Microsoft Office.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
+  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
+        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="home" data-cms-group="Hero (top of the page)">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="rise" style="--i:0" data-cms="home.hero.name" data-cms-label="Your name">Akhtar Muhammad</h1>
+          <p class="hero-role rise" style="--i:1" data-cms="home.hero.title" data-cms-label="Your job title">IT &amp; Computer Instructor</p>
+          <p class="hero-intro rise" style="--i:2" data-cms="home.hero.intro" data-cms-label="Introduction" data-cms-type="textarea">I teach practical computer skills, from Microsoft Office and hardware to AI tools and web development, and I build websites and web apps for schools and businesses. My goal is simple: to make technology easy to learn and useful in everyday work.</p>
+          <div class="hero-actions rise" style="--i:3">
+            <a class="btn btn-primary" href="#work" data-cms="home.hero.cta" data-cms-label="Main button (scrolls to featured work)">View My Work</a>
+            <a class="btn btn-ghost" href="contact.html" data-cms="home.hero.cta2" data-cms-label="Second button (goes to Contact)">Contact Me</a>
+          </div>
+          <ul class="hero-skills rise" style="--i:4">
+            <li class="pill" data-cms="home.hero.pill1" data-cms-label="Skill tag 1">Microsoft Office</li>
+            <li class="pill" data-cms="home.hero.pill2" data-cms-label="Skill tag 2">AI Tools</li>
+            <li class="pill" data-cms="home.hero.pill3" data-cms-label="Skill tag 3">Web Development</li>
+            <li class="pill" data-cms="home.hero.pill4" data-cms-label="Skill tag 4">Hardware &amp; Software</li>
+          </ul>
+        </div>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/profile-placeholder.svg" width="800" height="1000" alt="Akhtar Muhammad, IT &amp; Computer Instructor" data-cms-img="profile">
+          </div>
+          <div class="chip chip-1"><i></i><span data-cms="home.hero.chip1" data-cms-label="Floating tag 1">AI Tools</span></div>
+          <div class="chip chip-2 blue"><i></i><span data-cms="home.hero.chip2" data-cms-label="Floating tag 2">Web Development</span></div>
+          <div class="chip chip-3"><i></i><span data-cms="home.hero.chip3" data-cms-label="Floating tag 3">2+ Years Teaching</span></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="highlights" data-cms-group="Professional highlights">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="home.hl.title" data-cms-label="Section heading">Professional highlights</h2>
+          <p data-cms="home.hl.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Teaching people to use technology, and building the tools they need.</p>
+        </div>
+
+        <div class="hl-grid" data-stagger>
+          <article class="tile tile-exp">
+            <div class="odo" data-odo role="img" aria-label="2 plus" data-cms="home.hl.exp.years" data-cms-label="Years of experience (just the number, for example 2)">
+              <span class="odo-win"><span class="odo-col"><i>0</i><i>1</i><i>2</i></span></span>
+              <span class="odo-plus">+</span>
+            </div>
+            <div>
+              <h3 data-cms="home.hl.exp.title" data-cms-label="Experience tile: title">Years of experience</h3>
+              <p data-cms="home.hl.exp.text" data-cms-label="Experience tile: text" data-cms-type="textarea">Teaching computers and building web projects.</p>
+            </div>
+          </article>
+
+          <article class="tile tile-wide">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg></div>
+            <h3 data-cms="home.hl.inst.title" data-cms-label="Instructor tile: title">IT &amp; Computer Instructor</h3>
+            <p data-cms="home.hl.inst.text" data-cms-label="Instructor tile: text" data-cms-type="textarea">Hands-on lessons in computer basics, Microsoft Office, and hardware and software.</p>
+            <ul class="tile-chips">
+              <li class="pill" data-cms="home.hl.inst.chip1" data-cms-label="Instructor tile: tag 1">Microsoft Office</li>
+              <li class="pill" data-cms="home.hl.inst.chip2" data-cms-label="Instructor tile: tag 2">Hardware</li>
+              <li class="pill" data-cms="home.hl.inst.chip3" data-cms-label="Instructor tile: tag 3">Software</li>
+            </ul>
+          </article>
+
+          <article class="tile tile-half">
+            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <h3 data-cms="home.hl.ai.title" data-cms-label="Training tile: title">Computer &amp; AI Training</h3>
+            <p data-cms="home.hl.ai.text" data-cms-label="Training tile: text" data-cms-type="textarea">From everyday computer skills to working with AI tools.</p>
+          </article>
+
+          <article class="tile tile-half">
+            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div>
+            <h3 data-cms="home.hl.web.title" data-cms-label="Web tile: title">Web Development</h3>
+            <p data-cms="home.hl.web.text" data-cms-label="Web tile: text" data-cms-type="textarea">Websites and web apps for schools and businesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" data-cms-group="Services preview">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 data-cms="home.services.title" data-cms-label="Section heading">How I can help</h2>
+          <p data-cms="home.services.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Training, websites and practical IT solutions, built around what you need.</p>
+        </div>
+
+        <div class="svc-list" data-stagger data-cms-render="services-teaser">
+          <article class="svc svc-more">
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+            <div><h3 data-cms="home.services.more.title" data-cms-label="Last card: title">Something else in mind?</h3><p data-cms="home.services.more.text" data-cms-label="Last card: text" data-cms-type="textarea">Tell me what you are working on and we will find the right fit.</p><a href="services.html" data-cms="home.services.more.link" data-cms-label="Last card: link text">See all services</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" data-cms-group="Featured work">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <h2 data-cms="home.work.title" data-cms-label="Section heading">Featured work</h2>
+          <p data-cms="home.work.sub" data-cms-label="Text under the heading" data-cms-type="textarea">A selection of the systems, websites and digital projects I have built.</p>
+        </div>
+
+        <div class="work-grid" data-stagger data-cms-render="featured-work"></div>
+        <div class="work-cta reveal">
+          <a class="btn btn-primary" href="portfolio.html" data-cms="home.work.cta" data-cms-label="Button under the gallery">View Full Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials" data-cms-group="Testimonials" hidden>
+      <div class="container">
+        <div class="sec-head center reveal">
+          <h2 data-cms="home.testimonials.title" data-cms-label="Section heading">What students and clients say</h2>
+          <p data-cms="home.testimonials.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Real words from the people I have taught and worked with.</p>
+        </div>
+
+        <div class="tslider reveal" aria-roledescription="carousel" aria-label="Testimonials">
+          <div class="tview"><div class="tslides" data-cms-render="testimonials"></div></div>
+          <div class="tcontrols">
+            <button class="tbtn" data-dir="-1" aria-label="Previous testimonial"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <div class="tdots"></div>
+            <button class="tbtn" data-dir="1" aria-label="Next testimonial"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools" data-cms-group="Tools and technologies">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <h2 data-cms="home.tools.title" data-cms-label="Section heading">Tools I work with</h2>
+          <p data-cms="home.tools.sub" data-cms-label="Text under the heading" data-cms-type="textarea">The technologies behind my teaching and my projects.</p>
+        </div>
+
+      </div>
+      <div class="marquee reveal" aria-label="Tools and technologies" data-cms-render="tools">
+        <div class="marquee-track">
+          <ul class="marquee-set"></ul>
+          <ul class="marquee-set" aria-hidden="true"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-cta" data-cms-group="Closing call to action">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2 data-cms="home.cta.title" data-cms-label="Heading">Let's work together</h2>
+            <p data-cms="home.cta.text" data-cms-label="Text" data-cms-type="textarea">Need computer training, a school system or a new website? Send me a message and we will talk it through.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" data-cms="home.cta.btn1" data-cms-label="First button">Contact Me</a>
+            <a class="btn btn-ghost" href="portfolio.html" data-cms="home.cta.btn2" data-cms-label="Second button">See My Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
+          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
+        </div>
+        <div>
+          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-cms-social-wrap>
+          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
+          <div class="socials" data-cms-render="social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
+        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/site-defaults.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portfolio | Akhtar Muhammad</title>
+  <meta name="description" content="Selected projects by Akhtar Muhammad: school systems, websites, business apps and client work.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
+  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
+        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" data-cms-group="Page heading">
+      <div class="container">
+        <h1 class="rise" style="--i:0" data-cms="portfolio.title" data-cms-label="Page title">Portfolio</h1>
+        <p class="rise" style="--i:1" data-cms="portfolio.intro" data-cms-label="Introduction" data-cms-type="textarea">Systems, websites and digital projects I have built. Select any project to see it larger.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-cms-group="Project list (projects are managed under Portfolio Projects)">
+      <div class="container">
+        <div class="rise" style="--i:2">
+          <div class="filters" role="group" aria-label="Filter projects by category">
+            <span class="filter-ind" aria-hidden="true"></span>
+          </div>
+        </div>
+        <ul class="pgrid" id="pgrid"></ul>
+        <p class="empty-note" id="pempty" hidden data-cms="portfolio.empty" data-cms-label="Message shown when there are no projects">Projects will appear here soon.</p>
+        <span hidden data-cms="portfolio.filter.all" data-cms-label="Name of the 'All' tab">All</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
+    <div class="lb-panel">
+      <button class="lb-close" aria-label="Close project view"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div class="lb-media"></div>
+      <div class="lb-info">
+        <span class="lb-tag"></span>
+        <h2 id="lb-title"></h2>
+        <p class="lb-desc"></p>
+        <p class="lb-long"></p>
+        <div class="lb-nav">
+          <button class="tbtn lb-step" data-dir="-1" aria-label="Previous project"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="tbtn lb-step" data-dir="1" aria-label="Next project"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+          <span class="lb-count"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
+          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
+        </div>
+        <div>
+          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-cms-social-wrap>
+          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
+          <div class="socials" data-cms-render="social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
+        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/site-defaults.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/portfolio.js" defer></script>
+</body>
+</html>
+
+AKHTAR MUHAMMAD PORTFOLIO WEBSITE  (complete, with Admin Panel)
+================================================================
+
+Start here: open HOW-TO-UPLOAD.txt (plain-language guide).
+
+Test login for the Admin Panel (change it on first login!)
+    Username: admin
+    Password: Admin123
+
+Pages
+    index.html       Home
+    about.html       About (story, teaching, skills, awards, journey, projects)
+    services.html    Services with prices
+    portfolio.html   Portfolio with filter tabs and lightbox
+    contact.html     Contact details, social links and message form
+    admin/           Admin Panel (open yourdomain.com/admin)
+
+How it works
+    - Every page reads data/site.json when it loads. The Admin Panel
+      saves that file through api.php, so changes are live at once.
+    - Text on each page is editable because elements carry data-cms
+      attributes. The Admin Panel reads the pages to build its forms.
+    - Lists (services, projects, awards, testimonials, tools), images,
+      contact details, social links and the colour theme come from
+      data/site.json too.
+    - assets/js/site-defaults.js is a built-in copy of the starting
+      content, used only if data/site.json cannot be loaded.
+
+Folders
+    assets/   css, js and images used by the pages
+    data/     site.json: all your saved content   (must be writable)
+    uploads/  pictures you upload                 (must be writable)
+    private/  admin login + messages, never public (must be writable)
+    admin/    the Admin Panel screens
+
+Themes (assets/css/theme.css)
+    Charcoal Orange, Midnight Blue, Slate Purple, Emerald Dark
+
+Requirements
+    Any web hosting with PHP 7 or newer. No database needed.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Services | Akhtar Muhammad</title>
+  <meta name="description" content="Website development, school management systems, business web apps, computer training, AI website creation, Excel solutions and IT support.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
+  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
+        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" data-cms-group="Page heading">
+      <div class="container">
+        <h1 class="rise" style="--i:0" data-cms="services.title" data-cms-label="Page title">Services</h1>
+        <p class="rise" style="--i:1" data-cms="services.intro" data-cms-label="Introduction" data-cms-type="textarea">Training, websites and practical IT solutions, built around what you need.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-cms-group="Services list (services and prices are managed under Services)">
+      <div class="container">
+        <div class="sv-grid" data-stagger data-cms-render="services-page"></div>
+        <p class="sv-note reveal" data-cms="services.note" data-cms-label="Note under the services" data-cms-type="textarea">Prices are a starting point. Contact me for a quote that fits your project.</p>
+        <span hidden data-cms="services.ask" data-cms-label="Link text on each service">Ask about this service</span>
+        <span hidden data-cms="services.price.none" data-cms-label="Text shown when a service has no price">Contact for a quote</span>
+      </div>
+    </section>
+
+    <section class="section" id="contact-cta" data-cms-group="Closing call to action">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2 data-cms="services.cta.title" data-cms-label="Heading">Have a project in mind?</h2>
+            <p data-cms="services.cta.text" data-cms-label="Text" data-cms-type="textarea">Tell me what you need and I will get back to you with the next steps.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html" data-cms="services.cta.btn1" data-cms-label="First button">Contact Me</a>
+            <a class="btn btn-ghost" href="portfolio.html" data-cms="services.cta.btn2" data-cms-label="Second button">See My Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
+          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
+        </div>
+        <div>
+          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div data-cms-social-wrap>
+          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
+          <div class="socials" data-cms-render="social"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
+        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/site-defaults.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
