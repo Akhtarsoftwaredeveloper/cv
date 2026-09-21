@@ -2,235 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Akhtar Muhammad | IT &amp; Computer Instructor and Web Developer</title>
-  <meta name="description" content="Akhtar Muhammad is an IT &amp; Computer Instructor with 2 years of experience in computer education, AI tools, web development and Microsoft Office.">
-  <meta name="theme-color" content="#15171b">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Panel | Akhtar Muhammad</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b1a'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='800' text-anchor='middle' fill='%2315171b' font-family='Arial'%3EAM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script>(function(){var d=document.documentElement;d.classList.add('js','cms-loading');try{var t=localStorage.getItem('cms-theme');if(t)d.setAttribute('data-theme',t);}catch(e){}setTimeout(function(){d.classList.remove('cms-loading');},2500);})();</script>
-  <noscript><style>.odo-col{transform:translateY(-2em)!important}html.cms-loading body{opacity:1}</style></noscript>
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="admin.css">
+  <script>try{var t=localStorage.getItem('cms-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
-    <div class="particles" id="particles"></div>
+  <!-- Login -->
+  <div id="login" class="login" hidden>
+    <form id="login-form" class="login-card" autocomplete="on">
+      <div class="brand-mark">AM</div>
+      <h1>Admin Panel</h1>
+      <p class="muted" id="login-msg">Log in to manage your website.</p>
+      <label class="field"><span>Username</span><input id="login-user" name="username" type="text" autocomplete="username" required autofocus></label>
+      <label class="field"><span>Password</span><input id="login-pass" name="password" type="password" autocomplete="current-password" required></label>
+      <p class="form-error" id="login-error" role="alert" hidden></p>
+      <button class="btn btn-primary wide" type="submit" id="login-btn">Log in</button>
+      <a class="back-link" href="../index.html">Back to the website</a>
+    </form>
   </div>
-  <header class="site-header" data-cms-group="Header and footer (shown on every page)">
-    <div class="container nav-bar">
-      <a class="brand" href="index.html" aria-label="Home">
-        <span class="brand-mark" data-cms-logo data-cms="site.brand.mark" data-cms-label="Logo letters (shown when no logo image is uploaded)">AM</span>
-        <span data-cms="site.brand" data-cms-label="Your name (header and footer)">Akhtar Muhammad</span>
-      </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
-      <nav id="site-nav" aria-label="Main">
-        <ul class="nav-links">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-cta" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+
+  <!-- Dashboard -->
+  <div id="app" class="app" hidden>
+    <aside class="side" id="side">
+      <div class="side-brand"><span class="brand-mark">AM</span><div><strong>Admin Panel</strong><small id="side-user"></small></div></div>
+      <nav id="nav" aria-label="Admin sections"></nav>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <div class="main">
+      <header class="top">
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+        <h2 id="top-title">Dashboard</h2>
+        <div class="top-actions">
+          <a class="btn btn-ghost small" href="../index.html" target="_blank" rel="noopener">View website</a>
+          <button class="btn btn-ghost small" id="logout-btn">Log out</button>
+        </div>
+      </header>
+      <div id="banner"></div>
+      <main id="view" tabindex="-1"></main>
     </div>
-  </header>
-
-  <main id="main">
-
-    <section class="hero" id="home" data-cms-group="Hero (top of the page)">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1 class="rise" style="--i:0" data-cms="home.hero.name" data-cms-label="Your name">Akhtar Muhammad</h1>
-          <p class="hero-role rise" style="--i:1" data-cms="home.hero.title" data-cms-label="Your job title">IT &amp; Computer Instructor</p>
-          <p class="hero-intro rise" style="--i:2" data-cms="home.hero.intro" data-cms-label="Introduction" data-cms-type="textarea">I teach practical computer skills, from Microsoft Office and hardware to AI tools and web development, and I build websites and web apps for schools and businesses. My goal is simple: to make technology easy to learn and useful in everyday work.</p>
-          <div class="hero-actions rise" style="--i:3">
-            <a class="btn btn-primary" href="#work" data-cms="home.hero.cta" data-cms-label="Main button (scrolls to featured work)">View My Work</a>
-            <a class="btn btn-ghost" href="contact.html" data-cms="home.hero.cta2" data-cms-label="Second button (goes to Contact)">Contact Me</a>
-          </div>
-          <ul class="hero-skills rise" style="--i:4">
-            <li class="pill" data-cms="home.hero.pill1" data-cms-label="Skill tag 1">Microsoft Office</li>
-            <li class="pill" data-cms="home.hero.pill2" data-cms-label="Skill tag 2">AI Tools</li>
-            <li class="pill" data-cms="home.hero.pill3" data-cms-label="Skill tag 3">Web Development</li>
-            <li class="pill" data-cms="home.hero.pill4" data-cms-label="Skill tag 4">Hardware &amp; Software</li>
-          </ul>
-        </div>
-        <figure class="portrait">
-          <div class="portrait-frame">
-            <img src="assets/img/profile-placeholder.svg" width="800" height="1000" alt="Akhtar Muhammad, IT &amp; Computer Instructor" data-cms-img="profile">
-          </div>
-          <div class="chip chip-1"><i></i><span data-cms="home.hero.chip1" data-cms-label="Floating tag 1">AI Tools</span></div>
-          <div class="chip chip-2 blue"><i></i><span data-cms="home.hero.chip2" data-cms-label="Floating tag 2">Web Development</span></div>
-          <div class="chip chip-3"><i></i><span data-cms="home.hero.chip3" data-cms-label="Floating tag 3">2+ Years Teaching</span></div>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" id="highlights" data-cms-group="Professional highlights">
-      <div class="container">
-        <div class="sec-head reveal">
-          <h2 data-cms="home.hl.title" data-cms-label="Section heading">Professional highlights</h2>
-          <p data-cms="home.hl.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Teaching people to use technology, and building the tools they need.</p>
-        </div>
-
-        <div class="hl-grid" data-stagger>
-          <article class="tile tile-exp">
-            <div class="odo" data-odo role="img" aria-label="2 plus" data-cms="home.hl.exp.years" data-cms-label="Years of experience (just the number, for example 2)">
-              <span class="odo-win"><span class="odo-col"><i>0</i><i>1</i><i>2</i></span></span>
-              <span class="odo-plus">+</span>
-            </div>
-            <div>
-              <h3 data-cms="home.hl.exp.title" data-cms-label="Experience tile: title">Years of experience</h3>
-              <p data-cms="home.hl.exp.text" data-cms-label="Experience tile: text" data-cms-type="textarea">Teaching computers and building web projects.</p>
-            </div>
-          </article>
-
-          <article class="tile tile-wide">
-            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg></div>
-            <h3 data-cms="home.hl.inst.title" data-cms-label="Instructor tile: title">IT &amp; Computer Instructor</h3>
-            <p data-cms="home.hl.inst.text" data-cms-label="Instructor tile: text" data-cms-type="textarea">Hands-on lessons in computer basics, Microsoft Office, and hardware and software.</p>
-            <ul class="tile-chips">
-              <li class="pill" data-cms="home.hl.inst.chip1" data-cms-label="Instructor tile: tag 1">Microsoft Office</li>
-              <li class="pill" data-cms="home.hl.inst.chip2" data-cms-label="Instructor tile: tag 2">Hardware</li>
-              <li class="pill" data-cms="home.hl.inst.chip3" data-cms-label="Instructor tile: tag 3">Software</li>
-            </ul>
-          </article>
-
-          <article class="tile tile-half">
-            <div class="icon-ring blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
-            <h3 data-cms="home.hl.ai.title" data-cms-label="Training tile: title">Computer &amp; AI Training</h3>
-            <p data-cms="home.hl.ai.text" data-cms-label="Training tile: text" data-cms-type="textarea">From everyday computer skills to working with AI tools.</p>
-          </article>
-
-          <article class="tile tile-half">
-            <div class="icon-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div>
-            <h3 data-cms="home.hl.web.title" data-cms-label="Web tile: title">Web Development</h3>
-            <p data-cms="home.hl.web.text" data-cms-label="Web tile: text" data-cms-type="textarea">Websites and web apps for schools and businesses.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services" data-cms-group="Services preview">
-      <div class="container">
-        <div class="sec-head reveal">
-          <h2 data-cms="home.services.title" data-cms-label="Section heading">How I can help</h2>
-          <p data-cms="home.services.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Training, websites and practical IT solutions, built around what you need.</p>
-        </div>
-
-        <div class="svc-list" data-stagger data-cms-render="services-teaser">
-          <article class="svc svc-more">
-            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-            <div><h3 data-cms="home.services.more.title" data-cms-label="Last card: title">Something else in mind?</h3><p data-cms="home.services.more.text" data-cms-label="Last card: text" data-cms-type="textarea">Tell me what you are working on and we will find the right fit.</p><a href="services.html" data-cms="home.services.more.link" data-cms-label="Last card: link text">See all services</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="work" data-cms-group="Featured work">
-      <div class="container">
-        <div class="sec-head center reveal">
-          <h2 data-cms="home.work.title" data-cms-label="Section heading">Featured work</h2>
-          <p data-cms="home.work.sub" data-cms-label="Text under the heading" data-cms-type="textarea">A selection of the systems, websites and digital projects I have built.</p>
-        </div>
-
-        <div class="work-grid" data-stagger data-cms-render="featured-work"></div>
-        <div class="work-cta reveal">
-          <a class="btn btn-primary" href="portfolio.html" data-cms="home.work.cta" data-cms-label="Button under the gallery">View Full Portfolio</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="testimonials" data-cms-group="Testimonials" hidden>
-      <div class="container">
-        <div class="sec-head center reveal">
-          <h2 data-cms="home.testimonials.title" data-cms-label="Section heading">What students and clients say</h2>
-          <p data-cms="home.testimonials.sub" data-cms-label="Text under the heading" data-cms-type="textarea">Real words from the people I have taught and worked with.</p>
-        </div>
-
-        <div class="tslider reveal" aria-roledescription="carousel" aria-label="Testimonials">
-          <div class="tview"><div class="tslides" data-cms-render="testimonials"></div></div>
-          <div class="tcontrols">
-            <button class="tbtn" data-dir="-1" aria-label="Previous testimonial"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-            <div class="tdots"></div>
-            <button class="tbtn" data-dir="1" aria-label="Next testimonial"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tools" data-cms-group="Tools and technologies">
-      <div class="container">
-        <div class="sec-head center reveal">
-          <h2 data-cms="home.tools.title" data-cms-label="Section heading">Tools I work with</h2>
-          <p data-cms="home.tools.sub" data-cms-label="Text under the heading" data-cms-type="textarea">The technologies behind my teaching and my projects.</p>
-        </div>
-
-      </div>
-      <div class="marquee reveal" aria-label="Tools and technologies" data-cms-render="tools">
-        <div class="marquee-track">
-          <ul class="marquee-set"></ul>
-          <ul class="marquee-set" aria-hidden="true"></ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact-cta" data-cms-group="Closing call to action">
-      <div class="container">
-        <div class="cta-panel reveal">
-          <div>
-            <h2 data-cms="home.cta.title" data-cms-label="Heading">Let's work together</h2>
-            <p data-cms="home.cta.text" data-cms-label="Text" data-cms-type="textarea">Need computer training, a school system or a new website? Send me a message and we will talk it through.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="contact.html" data-cms="home.cta.btn1" data-cms-label="First button">Contact Me</a>
-            <a class="btn btn-ghost" href="portfolio.html" data-cms="home.cta.btn2" data-cms-label="Second button">See My Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" data-cms-group="Header and footer (shown on every page)">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html"><span class="brand-mark" data-cms-logo>AM</span><span data-cms="site.brand">Akhtar Muhammad</span></a>
-          <p data-cms="site.footer.blurb" data-cms-label="Short description in the footer" data-cms-type="textarea">IT &amp; Computer Instructor and web developer. Practical training, websites and web apps.</p>
-        </div>
-        <div>
-          <h4 data-cms="site.footer.links" data-cms-label="Footer heading: quick links">Quick links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div data-cms-social-wrap>
-          <h4 data-cms="site.footer.follow" data-cms-label="Footer heading: social links">Follow me</h4>
-          <div class="socials" data-cms-render="social"></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> <span data-cms="site.brand">Akhtar Muhammad</span>. <span data-cms="site.footer.rights" data-cms-label="Copyright wording">All rights reserved.</span></span>
-        <span data-cms="site.footer.role" data-cms-label="Job title at the bottom of the footer">IT &amp; Computer Instructor</span>
-      </div>
+    <div class="savebar" id="savebar" hidden>
+      <span>You have changes that are not saved yet.</span>
+      <div><button class="btn btn-ghost small" id="discard-btn">Discard</button><button class="btn btn-primary small" id="save-btn">Save changes</button></div>
     </div>
-  </footer>
+  </div>
 
-  <script src="assets/js/icons.js" defer></script>
-  <script src="assets/js/site-defaults.js" defer></script>
-  <script src="assets/js/cms.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <div id="modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><h3 id="modal-title"></h3><div id="modal-body"></div></div></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="../assets/js/icons.js"></script>
+  <script src="../assets/js/site-defaults.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>

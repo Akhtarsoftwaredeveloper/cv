@@ -1,0 +1,47 @@
+/* =========================================================
+   Colour themes for the whole website (and the Admin Panel).
+   The active theme is set with <html data-theme="..."> and is
+   chosen from Admin Panel > Color Theme.
+   ---------------------------------------------------------
+   --bg / --bg2     page and panel background
+   --a1 / --a2      the two accent colours (--a1-soft / --a2-soft are lighter)
+   --on-a1 / --on-a2  text colour that sits on top of an accent
+   --*-rgb          same colours as "r, g, b" so we can add transparency
+   ========================================================= */
+
+:root,
+[data-theme="charcoal-orange"] {
+  --bg: #15171b;      --bg-rgb: 21, 23, 27;
+  --bg2: #1b1e24;     --bg2-rgb: 27, 30, 36;
+  --a1: #ff6b1a;      --a1-soft: #ff8f4a;   --a1-rgb: 255, 107, 26;
+  --a2: #22a6ff;      --a2-soft: #5cc0ff;   --a2-rgb: 34, 166, 255;
+  --on-a1: #1a0f08;   --on-a2: #08131c;
+  --ink: #f3f5f8;     --muted: #a5adba;     --line: rgba(255, 255, 255, 0.09);
+}
+
+[data-theme="midnight-blue"] {
+  --bg: #0c1322;      --bg-rgb: 12, 19, 34;
+  --bg2: #131c30;     --bg2-rgb: 19, 28, 48;
+  --a1: #3d8bff;      --a1-soft: #78b0ff;   --a1-rgb: 61, 139, 255;
+  --a2: #22d3ee;      --a2-soft: #7ae7f6;   --a2-rgb: 34, 211, 238;
+  --on-a1: #06101f;   --on-a2: #041a1f;
+  --ink: #f1f5fb;     --muted: #a3b0c6;     --line: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="slate-purple"] {
+  --bg: #16141f;      --bg-rgb: 22, 20, 31;
+  --bg2: #201d2c;     --bg2-rgb: 32, 29, 44;
+  --a1: #a56bff;      --a1-soft: #c19aff;   --a1-rgb: 165, 107, 255;
+  --a2: #ff6bb0;      --a2-soft: #ff9ccb;   --a2-rgb: 255, 107, 176;
+  --on-a1: #160b26;   --on-a2: #2a0a19;
+  --ink: #f5f3fa;     --muted: #aaa5bc;     --line: rgba(255, 255, 255, 0.09);
+}
+
+[data-theme="emerald-dark"] {
+  --bg: #0e1615;      --bg-rgb: 14, 22, 21;
+  --bg2: #15211f;     --bg2-rgb: 21, 33, 31;
+  --a1: #14c88a;      --a1-soft: #4fe3b1;   --a1-rgb: 20, 200, 138;
+  --a2: #f2b544;      --a2-soft: #f7cf7d;   --a2-rgb: 242, 181, 68;
+  --on-a1: #04241a;   --on-a2: #2a1c04;
+  --ink: #f1f7f5;     --muted: #a2b3ae;     --line: rgba(255, 255, 255, 0.09);
+}
