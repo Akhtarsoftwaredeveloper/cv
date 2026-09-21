@@ -1,0 +1,166 @@
+=====================================================================
+  HOW TO PUT YOUR WEBSITE ONLINE  (simple guide, no coding needed)
+=====================================================================
+
+YOUR TEST LOGIN FOR THE ADMIN PANEL
+-----------------------------------
+  Username:  admin
+  Password:  Admin123
+
+  This is only a starting login so you can test right away.
+  IMPORTANT: change it the very first time you log in (see Part 3),
+  and always before your website goes live.
+
+
+PART 1. WHAT YOU NEED
+---------------------
+1. A domain name (for example yourname.com).
+2. A web hosting plan that supports PHP.
+   Almost every normal hosting plan does (the kind that comes with
+   "cPanel" or a "File Manager"). If unsure, ask the hosting company:
+   "Does this plan support PHP 7 or newer?"
+
+   NOTE: free "static" hosts such as GitHub Pages, Netlify or Firebase
+   Hosting can show the pages, but the Admin Panel cannot save changes
+   there. Use normal PHP hosting.
+
+
+PART 2. UPLOADING THE FILES  (about 10 minutes)
+-----------------------------------------------
+Option A: with the hosting File Manager (easiest)
+
+  1. Log in to your hosting control panel (cPanel) and open "File Manager".
+  2. Open the folder called  public_html  (this is where your website lives).
+     If your domain has its own folder, open that one instead.
+  3. Click "Upload" and choose the ZIP file you downloaded.
+  4. When it has finished, go back, right-click the ZIP file and
+     choose "Extract".
+  5. Extraction usually creates a folder called
+     "akhtar-muhammad-portfolio". Open it, select ALL the files
+     inside (index.html, api.php, admin, assets, data, ...),
+     click "Move", and move them up into  public_html.
+     The result must be that  index.html  sits directly inside
+     public_html (not inside another folder).
+  6. Delete the empty folder and the ZIP file.
+
+Option B: with FileZilla (free FTP program)
+
+  1. Unzip the ZIP file on your computer.
+  2. Connect FileZilla using the FTP details your host emailed you.
+  3. Drag everything from inside the unzipped folder into
+     public_html on the right-hand side.
+
+Now open  https://yourdomain.com  in your browser. Your website
+should appear.
+
+
+PART 3. LOG IN AND CHANGE THE DEFAULT PASSWORD  (do this first!)
+----------------------------------------------------------------
+  1. Go to  https://yourdomain.com/admin
+  2. Log in with:   admin   /   Admin123
+  3. A box appears: "Change your default login". Fill it in:
+       - Current password:  Admin123
+       - New username:      choose your own (letters and numbers)
+       - New password:      at least 8 characters, not Admin123
+       - Repeat the new password
+     Click "Save new login".
+     (If you clicked "Remind me later", open  Password and Security
+      in the left menu at any time. A red warning stays at the top
+      until you have changed it.)
+  4. Write your new username and password down somewhere safe.
+
+
+PART 4. CHECK EVERYTHING WORKS
+------------------------------
+On the Dashboard, look at the "Setup check" box. You want to see
+all green ticks:
+  - PHP is running
+  - Saving is possible
+  - Image uploads are possible
+  - Login and messages can be stored
+
+If one shows a red cross, the folder named in the message needs
+"write permission". In File Manager: right-click that folder
+(data, uploads or private) > "Change Permissions" and set it to
+755 (or 775 if 755 does not fix it). If it still fails, send the
+message to your hosting support: "Please make the folders data,
+uploads and private writable for PHP."
+
+Then do a quick test: change your name on the Home page, click
+"Save changes", and open your website in a new tab. The change is
+there straight away.
+
+
+PART 5. USING THE ADMIN PANEL
+-----------------------------
+Left menu:
+  PAGES     Change the wording on Home, About, Services, Portfolio,
+            Contact, and the header/footer.
+  FEATURES  Services and Prices, Portfolio Projects (with
+            categories and thumbnails), Awards and Achievements,
+            Testimonials, Tools, Contact and Social Links, Images
+            (profile photo, logo, every thumbnail), Color Theme.
+  INBOX     Messages sent from your Contact page.
+  ACCOUNT   Change your username and password.
+
+Every time you change something, a bar appears at the bottom:
+"You have changes that are not saved yet". Click "Save changes"
+and your live website updates immediately.
+(Color Theme is different: clicking a theme changes your whole
+website at once, no saving needed.)
+
+Tips
+  - Photos: any normal photo works. The panel makes big photos
+    smaller automatically.
+  - Testimonials and Awards: these sections stay hidden on your
+    website until you add your first real entry.
+  - Services: leave the price empty to show "Contact for a quote".
+
+
+PART 6. IF YOU FORGET YOUR PASSWORD
+-----------------------------------
+  1. In File Manager open the folder  private
+  2. Delete the file  auth.php
+  3. Go to /admin and log in with  admin / Admin123  again.
+  4. Change the password straight away (Part 3).
+(Only someone who can log in to your hosting can do this.)
+
+
+PART 7. KEEP A BACKUP
+---------------------
+Everything you enter is saved in two places:
+  - the folder  data     (your texts, lists, prices, settings)
+  - the folder  uploads  (your pictures)
+  - the folder  private  (your login and messages)
+Once in a while, download these three folders to your computer.
+If anything ever goes wrong, upload them back.
+
+
+HELPFUL TO KNOW
+---------------
+  - Use HTTPS (the padlock). Most hosts give you a free one
+    ("Let's Encrypt" / "SSL") in the control panel.
+  - Never share the Admin Panel address and login with anyone
+    you do not trust.
+  - Do not delete api.php: the Admin Panel and the Contact form
+    need it.
+
+IF THE LOGIN DOES NOT OPEN
+--------------------------
+1. The Admin Panel does NOT work if you double-click admin/index.html
+   on your computer. It only works after the files are uploaded to
+   hosting with PHP, and you open  https://yourdomain.com/admin
+2. Type the login exactly (no quote marks, no spaces):
+       admin
+       Admin123        (capital A, small "dmin", then 123)
+3. Quick test: open this address in your browser
+       https://yourdomain.com/api.php?action=session
+   You should see:   {"ok":true,"loggedIn":false}
+     - If the file downloads or you see code starting with <?php,
+       PHP is not switched on for your hosting: ask your host to enable it.
+     - If you see "Not found" (404), api.php is in the wrong folder.
+       It must sit next to index.html inside public_html.
+4. After 5 wrong tries the login locks for 15 minutes. Wait, then try again.
+5. If a red message appears about the "private" folder, set that
+   folder's permission to 755 (or 775) as explained in Part 4.
+

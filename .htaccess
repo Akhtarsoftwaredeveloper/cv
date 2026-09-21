@@ -1,0 +1,6 @@
+# Makes sure visitors always get the newest saved content.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(json)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
